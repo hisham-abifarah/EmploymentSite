@@ -30,15 +30,15 @@
 
 <!-- ##################end of state db################## -->
 
-	<!-- 	<servlet>
+	 <!--	<servlet>
 			<servlet-name>regist</servlet-name>
-			<servlet-class>com.IndOrg.BB.controller.RegisterController</servlet-class>
+			<servlet-class>com.employmentapp.RegisterController</servlet-class>
 		</servlet>
 
 		<servlet-mapping>
 			<servlet-name>regist</servlet-name>
 			<url-pattern>/test</url-pattern>
-		</servlet-mapping>		 -->
+		</servlet-mapping>		  -->
 		
 <!-- ##################end of register################## -->
 

@@ -20,7 +20,7 @@ public class LoginDB
     LoginBean lb = new LoginBean();
     DBsinglton.bsinglton();Connection con = DBsinglton.connection();
     
-    String query = "select * from register where custid = ? and passwd=?";
+    String query = "select * from register where username = ? and passwd=?";
     try
     {
       this.pstmt = con.prepareStatement(query);
@@ -33,12 +33,12 @@ public class LoginDB
       {
         System.out.println(this.rs.getString(3));
         String fnm = this.rs.getString("fname");
-        String lnm = this.rs.getString("lname");
-        String accno = this.rs.getString("accountno");
+        String lnm = this.rs.getString("lname");     
+        String usern = this.rs.getString("username");
         System.out.println("name : " + fnm);
         lb.setFname(fnm);
         lb.setLname(lnm);
-        lb.setAccno(accno);
+      
       }
     }
     catch (SQLException e)

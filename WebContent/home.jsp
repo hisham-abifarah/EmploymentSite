@@ -15,18 +15,10 @@
 		<%
 	LoginBean lbj=(LoginBean)session.getAttribute("login");
 		%>Welcome : <%=lbj.getFname()+" "+lbj.getLname() %> <br>
-		<br> Account number:<%=lbj.getAccno() %>
+		<br> Account number:<%=lbj.getUsername() %>
 	<center><B><h1> Welcome </h1> </B></center>
 	<BR><BR>
-	<H2><center><I><A HREF="balance">Balance Enquire</A></I></center>
-	<BR><BR>
-	<center><I><A HREF="transact">Amount Transaction </A></I></center>
-	<BR><BR>
-	<center><I><A HREF="statment">Statement</A></I></center>
-	<BR><BR>
 	
-	<center> <i> <a href="paybill">Pay Bill</a></i></center>
-	<br><br>
 	<center><I><A HREF="detail">My Info</A></I></center></H2>
 	<br><br><br>
 	<%@include file="footer.jsp"%>

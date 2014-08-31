@@ -27,7 +27,7 @@ public class UrlFilter
     if (session != null) {
       chain.doFilter(req, resp);
     } else {
-      resp.sendRedirect("/ib");
+      resp.sendRedirect("index.jsp");
     }
   }
   

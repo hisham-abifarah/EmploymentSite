@@ -4,8 +4,8 @@ public class LoginBean
 {
   private String fname;
   private String lname;
-  private String accno;
   private String passwd;
+  private String username;
   
   public String getFname()
   {
@@ -27,15 +27,9 @@ public class LoginBean
     this.lname = lname;
   }
   
-  public String getAccno()
-  {
-    return this.accno;
-  }
+
   
-  public void setAccno(String accno)
-  {
-    this.accno = accno;
-  }
+
   
   public String getPasswd()
   {
@@ -45,5 +39,15 @@ public class LoginBean
   public void setPasswd(String passwd)
   {
     this.passwd = passwd;
+  }
+  
+  public String getUsername()
+  {
+    return this.username;
+  }
+  
+  public void setUsername(String username)
+  {
+    this.username = username;
   }
 }
