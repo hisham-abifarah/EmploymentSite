@@ -38,6 +38,7 @@ public class LoginDB
         System.out.println("name : " + fnm);
         lb.setFname(fnm);
         lb.setLname(lnm);
+        lb.setUsername(usern);
       
       }
     }

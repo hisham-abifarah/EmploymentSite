@@ -22,6 +22,8 @@ public class UserDetailDB
     String sql = "select * from register where username='" + accno + "'";
     this.stmt = this.con.createStatement();
     this.rs = this.stmt.executeQuery(sql);
+    System.out.println("value: "+accno);
+    
     while (this.rs.next())
     {
       rb.setFname(this.rs.getString(1));

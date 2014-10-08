@@ -72,8 +72,6 @@ public class RegesterBean
   }
   
 
-  
-
   public String getPhone()
   {
     return this.phone;
@@ -93,9 +91,6 @@ public class RegesterBean
   {
     this.passwd = passwd;
   }
-  
-
-
   
   public String getEmail()
   {

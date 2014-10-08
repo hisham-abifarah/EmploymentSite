@@ -24,6 +24,7 @@ public class UsrDetailControl
     
     LoginBean lb = (LoginBean)session.getAttribute("login");
     String accno = lb.getUsername();
+        
     try
     {
       RegesterBean rb = new RegesterBean();

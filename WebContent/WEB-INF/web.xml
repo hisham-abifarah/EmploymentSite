@@ -82,74 +82,63 @@
 
 <!-- ################## end of home ################## -->
 
-<!-- Balance.jsp -->
 
-		<servlet>
-			<servlet-name>bal</servlet-name>
-			<servlet-class>com.employmentapp.controller.BalanceServlet</servlet-class>
-		</servlet>
-
-		<servlet-mapping>
-			<servlet-name>bal</servlet-name>
-			<url-pattern>/balance</url-pattern>
-		</servlet-mapping>
-
-<!-- ################## end of balance ################## -->
 									
-									
-<!-- Amt Tranfer.jsp -->									
-					
-		<servlet>
-			<servlet-name>transfer</servlet-name>
-			<servlet-class>com.employmentapp.controller.TraferAmtControl</servlet-class>
-		</servlet>			
-					
-		<servlet-mapping>
-			<servlet-name>transfer</servlet-name>
-			<url-pattern>/transact</url-pattern>
-		</servlet-mapping>		
+							
 
-<!-- ################## end of Amt transfer link################## -->
-
-		<!-- Amt Transaction -->
-		<servlet>
-			<servlet-name>trans</servlet-name>
-			<servlet-class>com.employmentapp.controller.AmtTransactionCtrl</servlet-class>
-		</servlet>
-
-		<servlet-mapping>
-			<servlet-name>trans</servlet-name>
-			<url-pattern>/transfer</url-pattern>
-		</servlet-mapping>
-<!-- ################## end of Amt transaction  ################## -->
-<!-- Statment.jsp -->							
+<!-- job search.jsp -->							
 				
 		<servlet>
-			<servlet-name>stmts</servlet-name>
-			<servlet-class>com.employmentapp.controller.StatementControl</servlet-class>
+			<servlet-name>SearchJobs</servlet-name>
+			<servlet-class>com.employmentapp.controller.SearchJobs</servlet-class>
 		</servlet>	
 		
 		<servlet-mapping>
-			<servlet-name>stmts</servlet-name>
-			<url-pattern>/statment</url-pattern>
+			<servlet-name>SearchJobs</servlet-name>
+			<url-pattern>/SearchJobs</url-pattern>
 		</servlet-mapping>	
 		
-<!-- ################## end of statment ################## -->
-
-<!--  Date of transaction -->
-						
-						
-		<servlet>
-			<servlet-name>dtoftrans</servlet-name>
-			<servlet-class>com.employmentapp.controller.DateofTransControler</servlet-class>
+			<servlet>
+			<servlet-name>JobSearchControl</servlet-name>
+			<servlet-class>com.employmentapp.controller.JobSearchControl</servlet-class>
 		</servlet>	
 		
 		<servlet-mapping>
-			<servlet-name>dtoftrans</servlet-name>
-			<url-pattern>/dot</url-pattern>
-		</servlet-mapping>
+			<servlet-name>JobSearchControl</servlet-name>
+			<url-pattern>/JobSearchControl</url-pattern>
+		</servlet-mapping>	
 		
-<!-- ################## Date of transaction ################## -->	
+<!-- ################## end of job search ################## -->
+
+<!-- employer page.jsp -->							
+				
+		<servlet>
+			<servlet-name>EmployerPage</servlet-name>
+			<servlet-class>com.employmentapp.controller.EmployermainpageControl</servlet-class>
+		</servlet>	
+		
+		<servlet-mapping>
+			<servlet-name>EmployerPage</servlet-name>
+			<url-pattern>/EmployerPage</url-pattern>
+		</servlet-mapping>	
+		
+<!-- ################## end of employer page ################## -->
+
+<!-- employer register page.jsp -->							
+				
+		<servlet>
+			<servlet-name>EmployerRegisterPage</servlet-name>
+			<servlet-class>com.employmentapp.controller.EmployerRegisterControl</servlet-class>
+		</servlet>	
+		
+		<servlet-mapping>
+			<servlet-name>EmployerRegisterPage</servlet-name>
+			<url-pattern>/EmployerRegisterPage</url-pattern>
+		</servlet-mapping>	
+		
+<!-- ################## end of employer register page ################## -->
+
+
 
 		<!-- Setting -->
 

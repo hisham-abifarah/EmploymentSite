@@ -10,7 +10,7 @@
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Employment Website</title>
+<title>Employer Page</title>
 </head>
 
 
@@ -22,23 +22,26 @@
 
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'><span>Home</span></a></li>
-   <li><A href="EmployerPage"><span>Employer Page</span></a></li>
-   <li><a href='#'><span>Admin Page</span></a></li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
+   <li class='active'><a href='#'><span>Add Job</span></a></li>
+   <li><A href="EmployerPage"><span>Search Applicants</span></a></li>
+
 </ul>
 </div>
 
 
+
+
+
+
+
+
+<div align="right"><font color="red"><A HREF="EmployerRegisterPage">Register</A></font>
+</div>
+
 <FORM METHOD=POST ACTION="home">
 
 
-
-<div align="right"><font color="red"><A HREF="register">Register</A></font>
-</div>
-
-
-Username<BR>
+Employer Username<BR>
 <INPUT TYPE="text" NAME="web_un"><BR>
 Password<BR>
 <INPUT TYPE="password" NAME="web_pass"><BR>
