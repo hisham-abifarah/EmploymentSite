@@ -9,33 +9,37 @@
  
 <html>
     <head>
+    <link rel="stylesheet" href="stylesearchresults.css">
     </head>
-    <body>
-  <table>
-    <table width="700px" align="center"
-               style="border:1px solid #000000;">
-            <tr>
-                <td colspan=4 align="center"
-                    style="background-color:teal">
-                    <b>User Record</b></td>
+    <body background="img/login.gif">
+    
+    <div align=left">
+        <table border="1" cellpadding="5">
+            <caption><h2>List of Jobs</h2></caption>
+
+
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Duration</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    
+        <c:forEach var="user" items="${users}" varStatus="loop">
+            <tr class="${loop.index % 2 == 0 ? 'even' : 'odd'}">
+                <td>${user.category}</td>
+                <td>${user.type}</td>
+                <td>${user.duration}</td>
+                <td>${user.location}</td>
+               <td>
+        <a href="http://www.google.com/">Apply</a>
+      </td>
+                
             </tr>
-            <tr style="background-color:lightgrey;">
-                <td><b>Category</b></td>
-                <td><b>Type</b></td>
-                <td><b>Duration</b></td>
-                <td><b>Location</b></td>
-            </tr>
-            
-            
-            <c:forEach var="user" items="${users}">
-            <c:out value="${user.category}"/>
-             <c:out value="${user.type}"/>
-              <c:out value="${user.duration}"/>
-               <c:out value="${user.location}"/>
-           
-       	 </c:forEach>
-           
-     
+        </c:forEach>
 </table>
+</div>
     </body>
 </html>

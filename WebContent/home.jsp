@@ -16,28 +16,21 @@
 	LoginBean lbj=(LoginBean)session.getAttribute("login");
 		%>Welcome <br> <%="Name: " + lbj.getFname()+" <br>" + "last name: "+lbj.getLname() +"<br> "+ "username: " + lbj.getUsername() +"<br>" +"Password: " +lbj.getPasswd()    %> <br>
 	
-	
-	
-	<!--  <br> Account number:<%=lbj.getUsername() %> -->	
-	
-	
 	<center><B><h1> Welcome </h1> </B></center>
 	<BR><BR>
 	
 	<center><I><A HREF="detail">My Info</A></I></center></H2>
 	<BR>
-	<center><I><A HREF="apply">Apply for a job</A></I></center></H2>
+	<center><I><A HREF="JobSearchControl">Apply for a job</A></I></center></H2>
 		<BR>
 	<center><I><A HREF="JobSearchControl">Search job</A></I></center></H2>
 	<BR>	
-	<center><I><A HREF="addcv">Add CV</A></I></center></H2>
-	
-	<center><I><A HREF="SearchJobs">test search</A></I></center></H2>
-	
-	
-	
-	<br><br><br><br><br><br><br><br>
+	<center><I><A HREF="useraddcv.jsp">Add/Edit CV</A></I></center></H2> 
+ <BR>
 
+	
+	
+	<br><br><br><br><br><br>
 	
 	<%@include file="footer.jsp"%>
 	</body>

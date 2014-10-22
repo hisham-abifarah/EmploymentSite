@@ -82,6 +82,20 @@
 
 <!-- ################## end of home ################## -->
 
+<!-- Home.jsp -->
+
+		<servlet>
+			<servlet-name>hme</servlet-name>
+			<servlet-class>com.employmentapp.controller.EmployerLoginServlet</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>hme</servlet-name>
+			<url-pattern>/homemp</url-pattern>
+		</servlet-mapping>
+
+<!-- ################## end of home ################## -->
+
 
 									
 							
@@ -110,6 +124,18 @@
 		
 <!-- ################## end of job search ################## -->
 
+<servlet>
+			<servlet-name>UserAddCV</servlet-name>
+			<servlet-class>com.employmentapp.controller.UserAddCV</servlet-class>
+		</servlet>	
+		
+		<servlet-mapping>
+			<servlet-name>UserAddCV</servlet-name>
+			<url-pattern>/UserAddCV</url-pattern>
+		</servlet-mapping>	
+		
+		
+
 <!-- employer page.jsp -->							
 				
 		<servlet>
@@ -127,17 +153,37 @@
 <!-- employer register page.jsp -->							
 				
 		<servlet>
-			<servlet-name>EmployerRegisterPage</servlet-name>
+			<servlet-name>EmployerRegister</servlet-name>
 			<servlet-class>com.employmentapp.controller.EmployerRegisterControl</servlet-class>
 		</servlet>	
 		
 		<servlet-mapping>
-			<servlet-name>EmployerRegisterPage</servlet-name>
-			<url-pattern>/EmployerRegisterPage</url-pattern>
+		
+			<servlet-name>EmployerRegister</servlet-name>
+			
+			<url-pattern>/EmployerRegisterControl</url-pattern>
+			
 		</servlet-mapping>	
 		
 <!-- ################## end of employer register page ################## -->
 
+
+<!-- user update details.jsp -->							
+				
+		<servlet>
+			<servlet-name>UserUpdateDetails</servlet-name>
+			<servlet-class>com.employmentapp.controller.UserUpdateController</servlet-class>
+		</servlet>	
+		
+		<servlet-mapping>
+		
+			<servlet-name>UserUpdateDetails</servlet-name>
+			
+			<url-pattern>/UserUpdateDetails</url-pattern>
+			
+		</servlet-mapping>	
+		
+<!-- ################## end of employer register page ################## -->
 
 
 		<!-- Setting -->

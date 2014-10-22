@@ -1,0 +1,4 @@
+@CHARSET "ISO-8859-1";
+
+tr.even { background: red; }
+tr.odd { background: white; }

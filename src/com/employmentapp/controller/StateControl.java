@@ -23,15 +23,6 @@ public class StateControl
 
     System.out.println("############### State Controler ###########");
     
-
-
-
-
-
-
-
-
-
     req.setAttribute("userkey", usr);
     RequestDispatcher rdp = req.getRequestDispatcher("register.jsp");
     rdp.forward(req, resp);

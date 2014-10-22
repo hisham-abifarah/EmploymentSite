@@ -29,16 +29,12 @@
 </div>
 
 
-
-
-
-
-
-
-<div align="right"><font color="red"><A HREF="EmployerRegisterPage">Register</A></font>
+<div align="right"><font color="red"><A HREF="empregister.jsp">Register</A></font>
 </div>
 
-<FORM METHOD=POST ACTION="home">
+
+
+<FORM METHOD=POST ACTION="homemp">
 
 
 Employer Username<BR>

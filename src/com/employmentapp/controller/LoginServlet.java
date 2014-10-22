@@ -15,7 +15,10 @@ import javax.servlet.http.HttpSession;
 public class LoginServlet
   extends HttpServlet
 {
-  public void doPost(HttpServletRequest req, HttpServletResponse resp)
+
+	private static final long serialVersionUID = 1L;
+
+public void doPost(HttpServletRequest req, HttpServletResponse resp)
     throws ServletException, IOException
   {
     System.out.println("**Login Controller");

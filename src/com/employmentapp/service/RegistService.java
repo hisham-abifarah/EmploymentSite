@@ -1,24 +1,25 @@
 package com.employmentapp.service;
 
 
-
 import com.employmentapp.dao.RegisterDB;
 import com.employmentapp.dto.RegesterBean;
-import java.io.PrintStream;
 import java.sql.SQLException;
 
 public class RegistService
 {
-  public RegesterBean getRegister(RegesterBean rbc)
-    throws SQLException
-  {
-    System.out.println("++++++++++++++++++Register Service ++++++++++++ ");
-    RegesterBean rb = rbc;
-    System.out.println("Address : " + rb.getAddress());
-    rb = new RegisterDB().getregData(rb);
-    System.out.println("++++++++++++++++++Register Service Ends ++++++++++++ ");
-    return rb;
-  }
+//  public RegesterBean getRegister(RegesterBean rbc)
+  //  throws SQLException
+ // {
+ //   System.out.println("++++++++++++++++++Register Service ++++++++++++ ");
+ //   RegesterBean rb = rbc;
+    
+   
+  //  System.out.println("Address : " + rb.getAddress());
+
+  //  rb = new RegisterDB().getregData(rb);
+  //  System.out.println("++++++++++++++++++Register Service Ends ++++++++++++ ");
+  //  return rb;
+ // }
   
   String rnd = Double.toString(Math.random());
   String[] splt = this.rnd.split("\\.");

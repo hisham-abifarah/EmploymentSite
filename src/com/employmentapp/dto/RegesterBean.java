@@ -1,23 +1,18 @@
 package com.employmentapp.dto;
 
 
-
 public class RegesterBean
 {
   private String fname;
   private String lname;
- 
   private String address;
   private String birthday;
   private String gender;
   private String phone;
-
   private String passwd;
- 
   private String email;
   private String username;
-  
- 
+
   
   public String getFname()
   {

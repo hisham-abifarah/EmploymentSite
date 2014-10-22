@@ -23,8 +23,7 @@
 <div id='cssmenu'>
 <ul>
    <li class='active'><a href='#'><span>Home</span></a></li>
-   <li><A href="EmployerPage"><span>Employer Page</span></a></li>
-   <li><a href='#'><span>Admin Page</span></a></li>
+   <li><A href="employerpage.jsp"><span>Employer Page</span></a></li>
    <li class='last'><a href='#'><span>Contact</span></a></li>
 </ul>
 </div>

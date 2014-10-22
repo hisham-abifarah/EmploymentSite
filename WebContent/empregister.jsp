@@ -20,24 +20,24 @@
 
 
 
-<FORM name="regfrm" METHOD="POST" action="account"
-	onsubmit="return valid();">
+<FORM name="regfrm" METHOD="GET" action="EmployerRegisterControl"
+	>
 
 <TABLE border ="2" BORDERCOLOR="lightgreen"  >
 	<TR>
 		<TD colspan="2" align="center"><font color="blue" size="4">Company Details
-		Details </font></TD>
+		 </font></TD>
 	</TR>
 	<TR>
 		<TD>Name</TD>
-		<TD><INPUT TYPE="text" NAME="fn" onkeypress="alpha_only()"
+		<TD><INPUT TYPE="text" NAME="empname" onkeypress="alpha_only()"
 		size="33"	style="text-align: center"></TD>
 	</TR>
 
 
 	<TR>
 		<TD>Address</TD>
-		<TD><TEXTAREA NAME="address" ROWS="5" COLS="26"></TEXTAREA></TD>
+		<TD><TEXTAREA NAME="empaddress" ROWS="5" COLS="26"></TEXTAREA></TD>
 		<%
 			String error = (String) request.getAttribute("err");
 			System.out.println("=========" + error);
@@ -51,12 +51,18 @@
 	</TR>
 	<TR>
 		<TD>email</TD>
-		<TD><INPUT TYPE="text" NAME="email" size="33" onkeypress="no_space()"></TD>
+		<TD><INPUT TYPE="text" NAME="empemail" size="33" onkeypress="no_space()"></TD>
 	</TR>
 
 	<TR>
 		<TD>phone</TD>
-		<TD><INPUT TYPE="text" NAME="phone" onkeypress="num_only()"
+		<TD><INPUT TYPE="text" NAME="empphone" onkeypress="num_only()"
+			maxlength="8" ></TD>
+	</TR>
+	
+	<TR>
+		<TD>Cell</TD>
+		<TD><INPUT TYPE="text" NAME="empcell" onkeypress="num_only()"
 			maxlength="8" ></TD>
 	</TR>
 	
@@ -68,18 +74,18 @@
 
 <TR>
 		<TD>Username</TD>
-		<TD><INPUT TYPE="text" NAME="username" size="24"></TD>
+		<TD><INPUT TYPE="text" NAME="empusername" size="24"></TD>
 	</TR>
 
 
 
 	<TR>
 		<TD>Password</TD>
-		<TD><INPUT TYPE="password" NAME="password" size="24"></TD>
+		<TD><INPUT TYPE="password" NAME="emppassword" size="24"></TD>
 	</TR>
 	<TR>
 		<TD>Confirm pwd</TD>
-		<TD><INPUT TYPE="password" NAME="confirmpwd" size="24"></TD>
+		<TD><INPUT TYPE="password" NAME="empconfirmpwd" size="24"></TD>
 	</TR>
 </TABLE><%
 			String errorall = (String) request.getAttribute("errall");

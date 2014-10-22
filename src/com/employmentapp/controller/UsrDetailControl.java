@@ -17,7 +17,10 @@ import javax.servlet.http.HttpSession;
 public class UsrDetailControl
   extends HttpServlet
 {
-  public void doGet(HttpServletRequest req, HttpServletResponse resp)
+  
+	private static final long serialVersionUID = 1L;
+
+public void doGet(HttpServletRequest req, HttpServletResponse resp)
     throws ServletException, IOException
   {
     HttpSession session = req.getSession(false);

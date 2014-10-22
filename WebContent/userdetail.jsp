@@ -11,33 +11,48 @@
 <%@include file="header.jsp" %><br><div align="right">
 
 <a href="setting"><img src="img/set.png" height=34 width=34></a></div>
-<%@include file="name.jsp"%>
+
 <br><br>
 <%
 RegesterBean rb = (RegesterBean)session.getAttribute("usrkey");
-%><br><br> <center> <b> <i><table>
+%><br><br> <center> <b> <i>
+
+<FORM name="regfrm" METHOD="POST" action="UserUpdateController">
+
+<table>
 	<TR>
 	<td>Name :  </td>
 		<TD><%= rb.getFname()%> &nbsp;  <%= rb.getLname() %></TD>
 	</TR>
+	
+	<TR>
+		<TD>First Name: </TD>
+		<TD><INPUT TYPE="text" NAME="fn" size="30"	style="text-align: center"  value= <%= rb.getFname()%>
+	</TR>
+	
+	<TR>
+		<TD>Last Name: </TD>
+		<TD><INPUT TYPE="text" NAME="fl" size="30"	style="text-align: center" READONLY value= <%= rb.getLname()%>
+	</TR>
+	
 	<tr></tr><tr></tr>
 		<TR>
-		<TD>Gender : </TD>
-		<TD><%= rb.getGender() %></TD>
+		<TD>Gender: </TD>
+		<TD><INPUT TYPE="text" NAME="fg" size="30"	style="text-align: center" READONLY value= <%= rb.getGender()%>
 	</TR>
 <tr></tr><tr></tr>
 
 
 	<TR>
 		<TD>Birthday : </TD>
-		<TD> <%= rb.getBirthday() %> &nbsp;&nbsp;&nbsp;
+		<TD><INPUT TYPE="text" NAME="fb" size="30"	style="text-align: center" READONLY value= <%= rb.getBirthday()%> &nbsp;&nbsp;&nbsp;
 		</TD>
 
 	</TR>
 <tr></tr><tr></tr>
 	<TR>
 		<TD>Address : </TD>
-		<TD><%= rb.getAddress()  %></TD>
+		<TD><INPUT TYPE="text" NAME="fa" size="30"	style="text-align: center" READONLY value= <%= rb.getAddress()%>
 	
 	</TR>
 <tr></tr><tr></tr>
@@ -45,12 +60,12 @@ RegesterBean rb = (RegesterBean)session.getAttribute("usrkey");
 	<tr></tr><tr></tr>
 	<TR>
 		<TD>phone : </TD>
-		<TD>+91&nbsp;<%= rb.getPhone() %></TD>
+		<TD><INPUT TYPE="text" NAME="fp" size="30"	style="text-align: center" READONLY value= <%= rb.getPhone()%>
 	</TR>
 	<tr></tr><tr></tr>
 	<TR>
 		<TD>email : </TD>
-		<TD><%= rb.getEmail() %></TD>
+		<TD><INPUT TYPE="text" NAME="fe" size="30"	style="text-align: center" READONLY value= <%= rb.getEmail()%>
 	</TR>
 <tr></tr><tr></tr>
 
@@ -69,7 +84,8 @@ RegesterBean rb = (RegesterBean)session.getAttribute("usrkey");
 		<TD><%= rb.getPasswd() %></TD>
 	</TR>
 	
-</TABLE></i></b></center>
+</TABLE><INPUT TYPE="submit" value="Submit"/></pre><br><br><br></Form></i></b></center>
+
 
 <br><marquee><p>&copy; Copyright Hisham Abi Farah</p></marquee>
 </body>

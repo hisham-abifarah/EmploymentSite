@@ -15,7 +15,7 @@ public class RegisterDB
   Connection con;
   
   public RegisterDB()
-  {
+  { 
     DBsinglton.bsinglton();this.con = DBsinglton.connection();
   }
   
@@ -26,8 +26,6 @@ public class RegisterDB
     
     RegesterBean rdb = rb;
     
-
-
     String query = "insert into register values (?,?,?,?,?,?,?,?,?)";
     
 
@@ -41,22 +39,12 @@ public class RegisterDB
     this.pstmt.setString(7, rdb.getEmail());
     this.pstmt.setString(8, rdb.getBirthday());
     this.pstmt.setString(9, rdb.getUsername());
+   
+   
 
-    
+  
     this.pstmt.execute();
     
-
-
- //   String sql = "insert into accbal values(?,?,?,?)";
- //   double d = 2000.0D;
- //   this.pstmt = this.con.prepareStatement(sql);
- //   this.pstmt.setDouble(1, d);
- //   this.pstmt.setString(2, rdb.getAccountno());
- //   this.pstmt.setString(3, rdb.getAccount_typ());
-//    this.pstmt.setString(4, rdb.getFname());
- //   this.pstmt.execute();
-    
-
     System.out.println("** End of Register DAO");
     return rdb;
   }
